@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+body{
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+    nav{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        height: 80px;
+        background-color:rgb(12, 12, 77);
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+         list-style: none; 
+          /* there were given bullets on the start of items, it will remove  */
+        margin: 0 23px;  /* it will give space between items */
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    nav ul li a:hover{
+        color: rgb(145, 145, 213);
+        font-size: 1.04rem;
+    }
+    main hr{
+        border: 0;
+     background:#9c97f1;
+     height: 1.2px;    /* height of line */
+     margin: 40px 84px;   /* giving margin to left & right side */
+    }
+    .left{
+        font-size: 2rem;
+    }
+    .firstSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:130 0;
+        /* margin was this at first
+        margin:80 0;
+        but now it is changed bcoz of hr adjusted later */
+    }
+    .firstSection > div{
+        width: 30%;
+        font-size: 2.5rem;
+    }
+    /* only it was written first,
+    .firstSection div{
+        width: 30%; /* bcoz i want space b/w both sections, left and right */
+    }
+    but the all text is coming written one letter in each line, so add > sign
+    to adjust */
+    .leftSection{
+        font-size: 3rem;
+        
+    }
+
+    .leftSection .buttons{
+        padding: 50px 0;
+    }
+
+    .leftSection .btn{
+        padding: 12px;
+        background-color: rgb(44, 44, 167);
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .rightSection img{
+        width:80%;
+        margin: 10%;
+    }
+        /* it was written to adjust the image,
+        .rightSection img{
+        /* image was so long, i.e it was taking horizontal scroll bar,
+         to remove it, set width and margin  */
+         /* width: 80%;  
+        margin: 50px 0;    
+        }
+         but now it is going to add in first
+        section(containing both left & right sections) to adjust both's spaces */
+        .purple{
+            color: rgb(174, 109, 234);
+        }
+        .text-gray{
+
+        }
+        #element{
+            color: rgb(174, 109, 234);
+        }
+        .secondSection{
+            max-width: 80vw;   /* space in x ray shape in page */
+            margin: auto;
+            height: 80vh;   /* space in y ray shape of page */
+        }
+        .secondSection h1{
+            font-size: 2rem;
+        }
+        .secondSection .box{   /* to bring line under the heading h1 */
+            background: white;
+            width: 60vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top{
+            width: 70px;
+            position: relative;
+            top: -68px;
+            left: -20px;
+        }
+        .vertical-title{
+                position: relative;
+                top: 30px;
+                width: 150px;
+                font-size: 14px;
+        }
+
+        .vertical-desc{
+                position: relative;
+                top: 46px;
+                color: pink;
+                width: 150px;
+                font-size: 9px;
+        }
+        .footer{
+            background-color: rgb(46, 40, 40);
+            height: 233px;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;   /* margin is liye nhi diya q k main margin andar say day na chahti hun */
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width: 3rem;
+        }
+        .footer .footer-rights{
+            text-align: center;
+            color: gray;
+        }
+            </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Danish Ammar</div>
+            <div class="right">
+                <ul>
+                    <!-- at first only list was made like that
+                     <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                    later anchor is added to make changes in list -->
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Danish</span>
+                <div>and I am an AI/ML Engineer</div>
+                <span id="element"></span> <!-- it is also taken from website = typed.js -->
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+<hr>    <!-- to give line after one section -->
+        <section class="secondSection">
+                <span class="text-gray">What I have done so far</span>
+                <h1>Work Experience</h1><!-- to bring it a little bit from extreme left to right not on center
+                                    but in mid of left and center of the page, go up and add in secondSection
+                                    under #element -->
+
+                <div class="box">
+                    <div class="vertical">
+                        <img class="image-top" src="1.png" alt="">
+                        <div class="vertical-title">
+                            Data Analyst(2010-2012)
+                        </div>
+                        <div class="vertical-desc">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi, tempore unde sequi enim iusto deleniti? Unde, aspernatur. Tempora ab error explicabo aliquam!
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="image-top" src="2.png" alt="">
+                    
+                    <div class="vertical-title">
+                        Data Scientist(2012-2014)
+                    </div>
+                
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste suscipit libero?
+                    </div>
+                </div>
+                    <div class="vertical">
+                        <img class="image-top" src="3.png" alt="">
+                        <div class="vertical-title">
+                            ML Engineer(2014-2018)
+                        </div>
+                        <div class="vertical-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem iste beatae?
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="image-top" src="4.png" alt="">
+                        <div class="vertical-title">
+                            Generative AI(2018-onward)
+                        </div>
+                        <div class="vertical-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae provident nobis distinctio.
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Danish's intro</h3>
+            </div>
+
+            <div class="footer-second">
+            <ul>
+                <li>Linkedin</li>
+                <li>Kaggle</li>
+                <li>facebook</li>
+                <li>youtube</li>
+            </ul>
+        </div>
+        
+        <div class="footer-links">
+            www.dfgd.com
+        </div>
+            <div class="footer-rights">
+                www.adan.com | All rights reserved
+            </div>
+        
+          </div>
+    </footer>
+    <!-- following code's link is brought from website "typed.js" -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script> 
+    // it is also taken from same website
+        var typed = new Typed('#element', {
+          strings: ['Data Analyst', 'Data Scientist','Generative AI','Video Editor','ML Engineer'],
+          typeSpeed:50,
+        });
+    </script>
+</body>
+</html>
